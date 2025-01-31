@@ -1,27 +1,4 @@
 
-let cityNames=[
-    {
-        arabicName:'القاهرة',
-        englishName:'Caior',
-        code:'EG'
-    },
-    {
-        arabicName:'دمياط',
-        englishName:'Dumyāţ',
-        code:'EG'
-    },
-    {
-        arabicName:'الرياض',
-        englishName:'Ar Riyāḑ',
-        code:'SA'
-    },
-    {
-        arabicName:'القصيم',
-        englishName:'Al Qaşīm',
-        code:'SA'
-    }
-]
-
 function setThePage(){
     let selections=document.getElementById('selections');
     for(names of cityNames)

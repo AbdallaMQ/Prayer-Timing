@@ -17,10 +17,14 @@
             background:linear-gradient(45deg,#441752,#1B1833);
             direction: rtl;
         }
+        section{
+            height: 100vh;
+        }
         .topsection{
-            margin: 20px 50px;
+            margin:0 50px 20px 50px;
         }
         .topsection h1{
+            width: auto;
             margin: 0px;
             padding: 0px;
             font-family:'Readex Pro' ;
@@ -47,17 +51,25 @@
             color: rgb(180, 116, 116);
             box-shadow: 1px 1px 3px black;
         }
+
 /*------------------------------------------------------*/
         #datasection{
+            width: 95%;
+            height: 30%;
+            margin: auto;
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
             justify-content: space-around;
+            align-items: flex-start;
         }
         #datasection div{
-            width: 15%;
             background-color: white;
             border-radius: 10px;
-            height: 30vh;
+            height: 90%;
             box-shadow: 3px 3px 5px black;
+            flex-grow: 0.2;
         }
         #datasection div h1{
             background-color: #5d2c6d;
@@ -68,10 +80,32 @@
         }
         #datasection div p{
             text-align: center;
-            margin-top: 20%;
+            margin-top: 10%;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 700;
             font-size: 40px;
+        }
+
+        @media (max-width:500px){
+            .topsection h1{
+                font-size: 80px;
+            }
+            .topsection #date{
+                font-size: 15px;
+            }
+            .topsection select{
+                font-size: 10px;
+            }
+            #datasection div{
+                height: 50%;
+                border-radius: 5px;
+            }
+            #datasection div h1{
+                font-size: 20px;
+            }
+            #datasection div p{
+                font-size: 20px;
+            }
         }
     </style>
 
@@ -114,7 +148,7 @@
             </div>
         </div>
     </section>
-
+    <script src="city_array.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
