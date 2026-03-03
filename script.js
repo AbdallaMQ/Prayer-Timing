@@ -1,4 +1,3 @@
-import axios from 'axios'
 function setThePage(){
     let selections=document.getElementById('selections');
     for(names of cityNames)
